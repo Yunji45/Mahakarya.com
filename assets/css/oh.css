@@ -1,0 +1,72 @@
+@keyframes slide-js {
+    0% {
+        left :0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+#home {
+    height: 600px; /* Tinggi yang sama dengan elemen #slide-js */
+    width: 100%; /* Lebar yang sama dengan elemen #slide-js */
+    position: relative; /* Penting jika Anda ingin elemen absolute di dalamnya */
+  
+    }
+#slide-js {
+    overflow: hidden;
+    width: 500%;
+    position: relative;
+    animation: slide-js 20s infinite;
+  }
+  
+  #slide-js .slides {
+    width: 20%;
+    float: left;
+    position: relative;
+    text-align: center; /* Mengatur teks menjadi rata tengah secara horizontal */
+  }
+  
+  #slide-js .slides img {
+    max-width: 100%;
+    height: auto;
+  }
+  #slide-js .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Mengatur teks menjadi rata tengah secara horizontal */
+    background: rgba(0, 0, 0, 0.5); /* Warna latar belakang hitam dengan tingkat transparansi 0.5 */
+    padding: 440px; /* Padding untuk memberi ruang di sekitar teks */
+  }
+  #slide-js h1 {
+    margin: 0;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;  
+  }
+      
+        
